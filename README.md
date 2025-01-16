@@ -1,50 +1,69 @@
-# React + TypeScript + Vite
+# Pokémon Explorer 🐾  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto utiliza **Vite** como bundler para criar uma aplicação rápida e eficiente em React, permitindo a navegação e exploração de Pokémons com integração à PokéAPI.
 
-Currently, two official plugins are available:
+## 🔧 Tecnologias e Dependências  
+- **[Vite](https://vitejs.dev/)** - Build tool.
+- **[React](https://react.dev/)** - Biblioteca JavaScript para construir interfaces de usuário.
+- **[React DOM](https://react.dev/reference/react-dom)** - Renderização do React no DOM.
+- **[Axios](https://axios-http.com/)** - Biblioteca para requisições HTTP.
+- **[React Query](https://tanstack.com/query/v3/)** - Gerenciamento de estado assíncrono para consultas e cache.
+- **[Styled Components](https://styled-components.com/)** - Estilização dinâmica para componentes React.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Como rodar o projeto?
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### 1. **Pré-requisitos**
+Certifique-se de que você possui o [Node.js](https://nodejs.org/) instalado na sua máquina. Recomendamos a versão LTS. Também será necessário o gerenciador de pacotes `npm` (que já vem com o Node.js) ou o [Yarn](https://yarnpkg.com/).
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### 2. **Clone o repositório**
+```bash
+git clone https://github.com/EduardoMoreira26/pokemon.git
+cd pokemon
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+### 3. **Instale as dependências**
+Execute o comando abaixo para instalar as bibliotecas necessárias:  
+```bash
+yarn install
 ```
+
+> Caso prefira usar Yarn:  
+> ```bash
+> yarn install
+> ```
+
+### 4. **Inicie o servidor de desenvolvimento**
+Rode o projeto localmente com o seguinte comando:  
+```bash
+yarn dev
+```
+
+O servidor estará disponível em: [http://localhost:5173](http://localhost:5173)
+
+## 📦 Dependências Principais  
+Aqui estão as dependências utilizadas no projeto:
+
+1. **axios** (`^1.7.9`)  
+   Para realizar requisições HTTP de forma simples e eficiente.
+
+2. **react** (`^18.0.0`) e **react-dom** (`^18.0.0`)  
+   Para criar e renderizar os componentes da aplicação.
+
+3. **react-query** (`^3.39.3`)  
+   Para gerenciamento de dados assíncronos e cache eficiente.
+
+4. **styled-components** (`^6.1.14`)  
+   Para estilização dinâmica e modular dos componentes.
+
+---
+
+## 🏰 Contribuição  
+Contribuições são bem-vindas!  
+1. Faça um fork do projeto.  
+2. Crie uma nova branch: `git checkout -b minha-feature`.  
+3. Commit suas mudanças: `git commit -m "Adiciona nova feature"`.  
+4. Envie para o repositório remoto: `git push origin minha-feature`.  
+5. Abra um Pull Request.  
+
